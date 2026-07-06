@@ -55,7 +55,7 @@
 /*FORMATANDO SECTION pesquisa*/
 #pesquisa{
     height: 200px;
-    background-color: var(--cor01);
+    background-color: var(--branca);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,17 +64,17 @@
 #pesquisa input{
     width: 800px;
     height: 80px;
-    background-color: var(--branca);
+    background-color:#e0d1ed;
     border-radius: 8px;
     padding: 10px;
     font-size: 1.4em;
-    color: var(--cor01);
+    color: black;
 }
 
 #pesquisa input::placeholder{
     font-size: 1.3em;
     font-style: italic;
-    color: var(--cor01);
+    color: rgb(173, 128, 240);
 }
 
 /*FORMATANDO OS CARDS*/
