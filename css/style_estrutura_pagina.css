@@ -36,6 +36,7 @@
     align-items: center;
     padding: 20px 60px;
     height: 100px;
+    background-color: rgb(243, 189, 247);
 }
 
 /*CONFIGURANDO MENU DA HORIZONTAL*/
@@ -150,7 +151,21 @@
 
 /*FORMATANDO LINKS*/
 
-#menu a:visited{
+#rodape{
+    width: 100%;
+    height: 180px;
+    background-color: #42008d;
+    margin: 20px 0px;
+    color: var(--branca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/*FORMATANDO LINKS*/
+#menu a:link{
     font-size: 1.4em;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -164,20 +179,23 @@
     letter-spacing: 5px;
     text-decoration: none;
     color: var(--cor02);
+}
+
+#menu a{
+    display: inline-block;
+    transition: transform .3s ease, color .3s ease;
 }
 
 #menu a:hover{
-    font-size: 1.4em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-decoration: none;
-    color: var(--cor03);
+    transform: translateY(-5px);
+    color: var(--cor01);
 }
 
 #menu a:active{
-    font-size: 1.4em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-decoration: none;
     color: var(--cor01);
+}
+
+#logo img{
+    width: 220px;
+    height: auto;
 }
