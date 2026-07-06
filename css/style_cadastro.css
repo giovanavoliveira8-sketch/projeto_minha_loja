@@ -34,7 +34,7 @@
     align-items: center;
     padding: 20px 60px;
     height: 100px;
-    background-color: rgb(186, 107, 247);
+    background-color: rgb(225, 185, 255);
 }
 
 /*CONFIGURANDO MENU DA HORIZONTAL*/
@@ -62,7 +62,7 @@
     }
 
     #form-pessoa h3{
-        background: #6c10be;
+        background: #a54ff0;
         color: rgb(235, 229, 238);
         text-align: center;
         padding: 15px;
