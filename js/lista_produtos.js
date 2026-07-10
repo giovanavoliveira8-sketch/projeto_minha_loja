@@ -360,3 +360,5 @@ const produtos = [
         secao: "Relógios"
     }
 ];
+
+export {produtos}
