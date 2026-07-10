@@ -4,7 +4,7 @@ const produtos = [
         descricaoProduto: "Brinco Argola Dourada",
         valorUnitario: 39.90,
         unidade: "UN",
-        caminhoImagem: "img/brincos/brinco-argola-dourada.jpg",
+        caminhoImagem: "../imagens/3.png",
         idSecao: 1,
         secao: "Brincos"
     },
@@ -13,7 +13,7 @@ const produtos = [
         descricaoProduto: "Brinco Pérola Clássica",
         valorUnitario: 34.90,
         unidade: "UN",
-        caminhoImagem: "img/brincos/brinco-perola-classica.jpg",
+        caminhoImagem: "../imagens/14.png",
         idSecao: 1,
         secao: "Brincos"
     },
@@ -22,7 +22,7 @@ const produtos = [
         descricaoProduto: "Brinco Ponto de Luz",
         valorUnitario: 29.90,
         unidade: "UN",
-        caminhoImagem: "img/brincos/brinco-ponto-luz.jpg",
+        caminhoImagem: "../imagens/19.png",
         idSecao: 1,
         secao: "Brincos"
     },
@@ -31,16 +31,16 @@ const produtos = [
         descricaoProduto: "Brinco Flor Delicada",
         valorUnitario: 42.90,
         unidade: "UN",
-        caminhoImagem: "img/brincos/brinco-flor.jpg",
+        caminhoImagem: "../imagens/16.png",
         idSecao: 1,
         secao: "Brincos"
     },
     {
         idProduto: 5,
-        descricaoProduto: "Brinco Coração Prata",
+        descricaoProduto: "Cosméticos",
         valorUnitario: 36.90,
         unidade: "UN",
-        caminhoImagem: "img/brincos/brinco-coracao.jpg",
+        caminhoImagem: "../imagens/9.png",
         idSecao: 1,
         secao: "Brincos"
     },
