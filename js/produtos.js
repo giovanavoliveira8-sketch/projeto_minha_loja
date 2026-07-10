@@ -6,11 +6,8 @@ const sectioCards = document.querySelector('#cards')
 
 //CARREGANDO OS CARDS
 const listarProdutos = () => {
-    return produtos
+    montaCards(produtos)
 }
-
-//CHAMANDO A FUNÇÃO listarProdutos
-listarProdutos 
 
 
 //MONTANDO OS MENUS SEÇÕES
@@ -37,7 +34,22 @@ const carregaSecoes = () =>{
 
     //LIMPANDO O ELEMENTO DO DOM 
     ulMenuSecoes.innerHTML = ''
+    
+    //MENU TODOS 
+    const liTodos = document.createElement('li')
 
+    const aTodos = document.createElement('a')
+    aTodos.setAttribute('href', '#')
+    aTodos.setAttribute('class', 'lnk-secao')
+    aTodos.innerHTML= 'Todos'
+
+    aTodos.addEventListener('click', () => {
+        montaCards(produtos)
+    })
+    liTodos.appendChild(aTodos)
+    ulMenuSecoes.appendChild(liTodos)
+
+    }
     //CHAMANDO A FUNÇÂO menuSecoes E PERCORRENDO O ARRAY DE SEÇÔES JÀ SELECIONADAS
     menuSecoes().forEach((elem, i)=>{
         //CRIANDO O ELEMENTO li
@@ -59,9 +71,6 @@ const carregaSecoes = () =>{
         //ADICIONANDO O ELEMENTO FILHO liMenu NO OBJETO DOM
         ulMenuSecoes.appendChild(liMenu)
     })
-}
-
-carregaSecoes()
 
 //FUNÇÂO FILTRO PRODUTO 
 const filtroProduto = (idSecao)=>{
@@ -110,3 +119,6 @@ const montaCards = (objProdutos) => {
 
     })
 }
+
+listarProdutos()
+carregaSecoes()
