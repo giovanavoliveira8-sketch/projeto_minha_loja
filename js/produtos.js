@@ -55,34 +55,44 @@ listarProdutos()
 
 //MONTANDO OS MENUS SEÇÕES
 const menuSecoes = () =>{
+    //CRIANDO A COLEÇÃO MAP
     const mapSecoes = new Map ()
-
+    //PERCORRENDO O ARRAY PRODUTO
     produtos.forEach((elem)=>{
+        //SELECIONANDO AS SEÇÔES
         mapSecoes.set(elem.idSecao, elem)
     })
 
+//CONVERTENDO MAP EM ARRAY
     const secoesFiltrada = Array.from(mapSecoes.values())
 
-
-    console.log(secoesFiltrada)
-
+//RETORNANDO O ARRAY SELECIONADO
     return secoesFiltrada
 }
 
 //FUNÇÃO PARA INSERIR OS MENUS NA LISTA
 const carregaSecoes = () =>{
+    //PEGANDO O ELEMENTO ul menu-secoes DO DOM
     const ulMenuSecoes = document.querySelector('#menu-secoes')
 
+    //LIMPANDO O ELEMENTO DO DOM 
+    ulMenuSecoes.innerHTML = ''
+
+    //CHAMANDO A FUNÇÂO menuSecoes E PERCORRENDO O ARRAY DE SEÇÔES JÀ SELECIONADAS
     menuSecoes().forEach((elem, i)=>{
+        //CRIANDO O ELEMENTO li
         const liMenu = document.createElement('li')
 
+        //CRIANDO O ELEMENTO a ATRIBUINDO O NOME DA SEÇÃO
         const aMenu = document.createElement('a')
         aMenu.setAttribute('href', '#')
         aMenu.setAttribute('class', 'lnk-secao')
         aMenu.innerHTML = elem.secao
 
+        //ADICIONANDO O ELEMENTO FILHO a NO li
         liMenu.appendChild(aMenu)
-
+ 
+        //ADICIONANDO O ELEMENTO FILHO liMenu NO OBJETO DOM
         ulMenuSecoes.appendChild(liMenu)
     })
 
