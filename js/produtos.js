@@ -19,16 +19,16 @@ const listarProdutos = () => {
     
         //CRIANDO O ELEMENTO img E DEFININDO OS ATRIBUTOS SRC E ALT OS VALORES DO CAMINHO DAS IMAGENS E A DESCRIÇÂO DOS PRODUTOS
         const imgCard= document.createElement('img')
-        imgCard.setAttribute('src', elem.caminho_imagem)
-        imgCard.setAttribute('alt', elem.descricao_produto)
+        imgCard.setAttribute('src', elem.caminhoImagem)
+        imgCard.setAttribute('alt', elem.descricaoProduto)
     
         //CRIANDO O ELEMENTO p E ATRIBUINDO A DESCRIÇÃO DOS PRODUTOS 
         const pCard = document.createElement('p')
-        pCard.innerHTML = elem.descricao_produto 
+        pCard.innerHTML = elem.descricaoProduto 
     
         //CRIANDO O ELEMENTO h2 E ATRIBUINDO O VALOR UNITÁRIO DEIXANDO EM DUAS CASAS DECIMAIS E SUBSTITUINDO PONTO POR VÍRGULA
         const h2Card = document.createElement('h2')
-        h2Card.innerHTML `R$ ${parseFloat(elem.valor_unitario).toFixed (2).replace('.',',')}`
+        h2Card.innerHTML += `R$ ${parseFloat(elem.valorUnitario).toFixed (2).replace('.',',')}`
     
         //CRIANDO O ELEMENTO button E DEFININDO OS ATRIBUTOS CLASS E A DESCRIÇÃO ADICIONAR
         const btnCard = document.createElement('button')
@@ -51,3 +51,42 @@ const listarProdutos = () => {
 
 //CHAMANDO A FUNÇÃO listarProdutos
 listarProdutos()
+
+
+//MONTANDO OS MENUS SEÇÕES
+const menuSecoes = () =>{
+    const mapSecoes = new Map ()
+
+    produtos.forEach((elem)=>{
+        mapSecoes.set(elem.idSecao, elem)
+    })
+
+    const secoesFiltrada = Array.from(mapSecoes.values())
+
+
+    console.log(secoesFiltrada)
+
+    return secoesFiltrada
+}
+
+//FUNÇÃO PARA INSERIR OS MENUS NA LISTA
+const carregaSecoes = () =>{
+    const ulMenuSecoes = document.querySelector('#menu-secoes')
+
+    menuSecoes().forEach((elem, i)=>{
+        const liMenu = document.createElement('li')
+
+        const aMenu = document.createElement('a')
+        aMenu.setAttribute('href', '#')
+        aMenu.setAttribute('class', 'lnk-secao')
+        aMenu.innerHTML = elem.secao
+
+        liMenu.appendChild(aMenu)
+
+        ulMenuSecoes.appendChild(liMenu)
+    })
+
+   
+}
+
+carregaSecoes()
