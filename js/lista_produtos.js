@@ -31,25 +31,27 @@ const produtos = [
         descricaoProduto: "Brinco Flor Delicada",
         valorUnitario: 42.90,
         unidade: "UN",
-        caminhoImagem: "../imagens/16.png",
+        caminhoImagem: "../imagens/brincoflordelicada.jpg",
         idSecao: 1,
         secao: "Brincos"
     },
+
     {
         idProduto: 5,
-        descricaoProduto: "Cosméticos",
-        valorUnitario: 36.90,
+        descricaoProduto: "Brinco Folha trabalhada",
+        valorUnitario: 45.90,
         unidade: "UN",
-        caminhoImagem: "../imagens/9.png",
+        caminhoImagem: "../imagens/folhatrabalhada.jpg",
         idSecao: 1,
         secao: "Brincos"
     },
+    
     {
         idProduto: 6,
         descricaoProduto: "Colar Ponto de Luz",
         valorUnitario: 59.90,
         unidade: "UN",
-        caminhoImagem: "img/colares/colar-ponto-luz.jpg",
+        caminhoImagem: "../imagens/colarpontoluz.jpg",
         idSecao: 2,
         secao: "Colares"
     },
@@ -58,7 +60,7 @@ const produtos = [
         descricaoProduto: "Colar Coração Dourado",
         valorUnitario: 69.90,
         unidade: "UN",
-        caminhoImagem: "img/colares/colar-coracao.jpg",
+        caminhoImagem: "../imagens/colarcoracaodourado.jpg",
         idSecao: 2,
         secao: "Colares"
     },
@@ -67,7 +69,7 @@ const produtos = [
         descricaoProduto: "Colar Borboleta",
         valorUnitario: 64.90,
         unidade: "UN",
-        caminhoImagem: "img/colares/colar-borboleta.jpg",
+        caminhoImagem: "../imagens/colarborboleta.jpg",
         idSecao: 2,
         secao: "Colares"
     },
@@ -76,7 +78,7 @@ const produtos = [
         descricaoProduto: "Colar Lua e Estrela",
         valorUnitario: 72.90,
         unidade: "UN",
-        caminhoImagem: "img/colares/colar-lua-estrela.jpg",
+        caminhoImagem: "../imagens/colarluaestrela.jpg",
         idSecao: 2,
         secao: "Colares"
     },
@@ -85,7 +87,7 @@ const produtos = [
         descricaoProduto: "Colar Trevo",
         valorUnitario: 61.90,
         unidade: "UN",
-        caminhoImagem: "img/colares/colar-trevo.jpg",
+        caminhoImagem: "../imagens/colartrevo.jpg",
         idSecao: 2,
         secao: "Colares"
     },
@@ -94,7 +96,7 @@ const produtos = [
         descricaoProduto: "Pulseira Riviera",
         valorUnitario: 79.90,
         unidade: "UN",
-        caminhoImagem: "img/pulseiras/pulseira-riviera.jpg",
+        caminhoImagem: "../imagens/pulseirariviera.jpg",
         idSecao: 3,
         secao: "Pulseiras"
     },
@@ -103,7 +105,7 @@ const produtos = [
         descricaoProduto: "Pulseira Pérolas",
         valorUnitario: 54.90,
         unidade: "UN",
-        caminhoImagem: "img/pulseiras/pulseira-perolas.jpg",
+        caminhoImagem: "../imagens/pulseirapérola.jpg",
         idSecao: 3,
         secao: "Pulseiras"
     },
@@ -112,7 +114,7 @@ const produtos = [
         descricaoProduto: "Pulseira Charms",
         valorUnitario: 89.90,
         unidade: "UN",
-        caminhoImagem: "img/pulseiras/pulseira-charms.jpg",
+        caminhoImagem: "../imagens/pulseiracharms.jpg",
         idSecao: 3,
         secao: "Pulseiras"
     },
@@ -121,7 +123,7 @@ const produtos = [
         descricaoProduto: "Pulseira Love",
         valorUnitario: 49.90,
         unidade: "UN",
-        caminhoImagem: "img/pulseiras/pulseira-love.jpg",
+        caminhoImagem: "../imagens/pulseiralove.png",
         idSecao: 3,
         secao: "Pulseiras"
     },
@@ -130,7 +132,7 @@ const produtos = [
         descricaoProduto: "Pulseira Cristais",
         valorUnitario: 68.90,
         unidade: "UN",
-        caminhoImagem: "img/pulseiras/pulseira-cristais.jpg",
+        caminhoImagem: "../imagens/pulseiracristais.jpg",
         idSecao: 3,
         secao: "Pulseiras"
     },
@@ -139,7 +141,7 @@ const produtos = [
         descricaoProduto: "Anel Solitário",
         valorUnitario: 45.90,
         unidade: "UN",
-        caminhoImagem: "img/aneis/anel-solitario.jpg",
+        caminhoImagem: "../imagens/anelsolidario.jpg",
         idSecao: 4,
         secao: "Anéis"
     },
@@ -148,7 +150,7 @@ const produtos = [
         descricaoProduto: "Anel Ajustável",
         valorUnitario: 32.90,
         unidade: "UN",
-        caminhoImagem: "img/aneis/anel-ajustavel.jpg",
+        caminhoImagem: "../imagens/anelajustavel.webp",
         idSecao: 4,
         secao: "Anéis"
     },
@@ -157,7 +159,7 @@ const produtos = [
         descricaoProduto: "Anel Borboleta",
         valorUnitario: 39.90,
         unidade: "UN",
-        caminhoImagem: "img/aneis/anel-borboleta.jpg",
+        caminhoImagem: "../imagens/anelborboleta.jpg",
         idSecao: 4,
         secao: "Anéis"
     },
@@ -166,7 +168,7 @@ const produtos = [
         descricaoProduto: "Anel Coração",
         valorUnitario: 36.90,
         unidade: "UN",
-        caminhoImagem: "img/aneis/anel-coracao.jpg",
+        caminhoImagem: "../imagens/anelcoracao.jpg",
         idSecao: 4,
         secao: "Anéis"
     },
@@ -175,7 +177,7 @@ const produtos = [
         descricaoProduto: "Anel Infinito",
         valorUnitario: 41.90,
         unidade: "UN",
-        caminhoImagem: "img/aneis/anel-infinito.jpg",
+        caminhoImagem: "../imagens/anelinfinito.webp",
         idSecao: 4,
         secao: "Anéis"
     },
@@ -184,7 +186,7 @@ const produtos = [
         descricaoProduto: "Presilha Flor",
         valorUnitario: 19.90,
         unidade: "UN",
-        caminhoImagem: "img/cabelo/presilha-flor.jpg",
+        caminhoImagem: "../imagens/presilhaflor.jpg",
         idSecao: 5,
         secao: "Acessórios para Cabelo"
     },
@@ -193,16 +195,16 @@ const produtos = [
         descricaoProduto: "Tiara Pérolas",
         valorUnitario: 34.90,
         unidade: "UN",
-        caminhoImagem: "img/cabelo/tiara-perolas.jpg",
+        caminhoImagem: "../imagens/tiaraperolas.webp",
         idSecao: 5,
         secao: "Acessórios para Cabelo"
     },
     {
         idProduto: 23,
-        descricaoProduto: "Scrunchie Cetim Rosa",
+        descricaoProduto: "Xuxinha Cetim Rosa",
         valorUnitario: 14.90,
         unidade: "UN",
-        caminhoImagem: "img/cabelo/scrunchie-rosa.jpg",
+        caminhoImagem: "../imagens/xuxinhacetim.jpg",
         idSecao: 5,
         secao: "Acessórios para Cabelo"
     },
@@ -211,25 +213,27 @@ const produtos = [
         descricaoProduto: "Laço Boutique",
         valorUnitario: 17.90,
         unidade: "UN",
-        caminhoImagem: "img/cabelo/laco-boutique.jpg",
+        caminhoImagem: "../imagens/laçinho.webp",
         idSecao: 5,
         secao: "Acessórios para Cabelo"
     },
+
     {
         idProduto: 25,
-        descricaoProduto: "Piranha Acrílica",
-        valorUnitario: 22.90,
+        descricaoProduto: "Cosméticos",
+        valorUnitario: 36.90,
         unidade: "UN",
-        caminhoImagem: "img/cabelo/piranha-acrilica.jpg",
+        caminhoImagem: "../imagens/9.png",
         idSecao: 5,
         secao: "Acessórios para Cabelo"
     },
+    
     {
         idProduto: 26,
         descricaoProduto: "Bolsa Transversal Nude",
         valorUnitario: 119.90,
         unidade: "UN",
-        caminhoImagem: "img/bolsas/bolsa-nude.jpg",
+        caminhoImagem: "../imagens/bolsatransversal nude.jpg",
         idSecao: 6,
         secao: "Bolsas"
     },
@@ -238,7 +242,7 @@ const produtos = [
         descricaoProduto: "Bolsa Mini Preta",
         valorUnitario: 99.90,
         unidade: "UN",
-        caminhoImagem: "img/bolsas/bolsa-preta.jpg",
+        caminhoImagem: "../imagens/bolsaminipreta.jpg",
         idSecao: 6,
         secao: "Bolsas"
     },
@@ -247,7 +251,7 @@ const produtos = [
         descricaoProduto: "Bolsa Tiracolo Rosa",
         valorUnitario: 109.90,
         unidade: "UN",
-        caminhoImagem: "img/bolsas/bolsa-rosa.jpg",
+        caminhoImagem: "../imagens/bolsatiracolorosa.webp",
         idSecao: 6,
         secao: "Bolsas"
     },
@@ -256,7 +260,7 @@ const produtos = [
         descricaoProduto: "Carteira Feminina",
         valorUnitario: 69.90,
         unidade: "UN",
-        caminhoImagem: "img/bolsas/carteira.jpg",
+        caminhoImagem: "../imagens/carteira.webp",
         idSecao: 6,
         secao: "Bolsas"
     },
@@ -265,7 +269,7 @@ const produtos = [
         descricaoProduto: "Bolsa Matelassê",
         valorUnitario: 139.90,
         unidade: "UN",
-        caminhoImagem: "img/bolsas/bolsa-matelasse.jpg",
+        caminhoImagem: "../imagens/bolsamate.webp",
         idSecao: 6,
         secao: "Bolsas"
     },
@@ -274,7 +278,7 @@ const produtos = [
         descricaoProduto: "Óculos Gatinho",
         valorUnitario: 79.90,
         unidade: "UN",
-        caminhoImagem: "img/oculos/oculos-gatinho.jpg",
+        caminhoImagem: "../imagens/oculosgatinho.jpg",
         idSecao: 7,
         secao: "Óculos"
     },
@@ -283,7 +287,7 @@ const produtos = [
         descricaoProduto: "Óculos Redondo",
         valorUnitario: 74.90,
         unidade: "UN",
-        caminhoImagem: "img/oculos/oculos-redondo.jpg",
+        caminhoImagem: "../imagens/oculosredondo.webp",
         idSecao: 7,
         secao: "Óculos"
     },
@@ -292,7 +296,7 @@ const produtos = [
         descricaoProduto: "Óculos Quadrado",
         valorUnitario: 82.90,
         unidade: "UN",
-        caminhoImagem: "img/oculos/oculos-quadrado.jpg",
+        caminhoImagem: "../imagens/oculosquadrado.webp",
         idSecao: 7,
         secao: "Óculos"
     },
@@ -301,7 +305,7 @@ const produtos = [
         descricaoProduto: "Óculos Retrô",
         valorUnitario: 89.90,
         unidade: "UN",
-        caminhoImagem: "img/oculos/oculos-retro.jpg",
+        caminhoImagem: "../imagens/oculosretro.webp",
         idSecao: 7,
         secao: "Óculos"
     },
@@ -310,7 +314,7 @@ const produtos = [
         descricaoProduto: "Óculos Degradê",
         valorUnitario: 84.90,
         unidade: "UN",
-        caminhoImagem: "img/oculos/oculos-degrade.jpg",
+        caminhoImagem: "../imagens/oculosdegrade.avif",
         idSecao: 7,
         secao: "Óculos"
     },
@@ -319,7 +323,7 @@ const produtos = [
         descricaoProduto: "Relógio Feminino Rose",
         valorUnitario: 149.90,
         unidade: "UN",
-        caminhoImagem: "img/relogios/relogio-rose.jpg",
+        caminhoImagem: "../imagens/relogiorose.webp",
         idSecao: 8,
         secao: "Relógios"
     },
@@ -328,7 +332,7 @@ const produtos = [
         descricaoProduto: "Relógio Prata",
         valorUnitario: 139.90,
         unidade: "UN",
-        caminhoImagem: "img/relogios/relogio-prata.jpg",
+        caminhoImagem: "../imagens/relogioprata.webp",
         idSecao: 8,
         secao: "Relógios"
     },
@@ -337,7 +341,7 @@ const produtos = [
         descricaoProduto: "Relógio Dourado",
         valorUnitario: 159.90,
         unidade: "UN",
-        caminhoImagem: "img/relogios/relogio-dourado.jpg",
+        caminhoImagem: "../imagens/relogiodourado.webp",
         idSecao: 8,
         secao: "Relógios"
     },
@@ -346,7 +350,7 @@ const produtos = [
         descricaoProduto: "Relógio Minimalista",
         valorUnitario: 129.90,
         unidade: "UN",
-        caminhoImagem: "img/relogios/relogio-minimalista.jpg",
+        caminhoImagem: "../imagens/relogiominimalista.jpg",
         idSecao: 8,
         secao: "Relógios"
     },
@@ -355,7 +359,7 @@ const produtos = [
         descricaoProduto: "Relógio Pulseira de Couro",
         valorUnitario: 169.90,
         unidade: "UN",
-        caminhoImagem: "img/relogios/relogio-couro.jpg",
+        caminhoImagem: "../imagens/relogiocouro.webp",
         idSecao: 8,
         secao: "Relógios"
     }
