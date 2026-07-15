@@ -49,7 +49,9 @@ const montaTelaCarrinho = () => {
         imgRemover.setAttribute('alt', 'remover')
 
         imgRemover.addEventListener('click', () => {
-            removeItem(i);
+            if(confirm(`Deseja remover esse item ${elem.descricaoProduto} do carrinho?`)){
+                removeItem(i)
+            }
             montaTelaCarrinho();
         });
 
@@ -69,3 +71,4 @@ const montaTelaCarrinho = () => {
 }
 
 montaTelaCarrinho()
+
