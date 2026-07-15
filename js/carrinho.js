@@ -16,12 +16,31 @@ const item = (objProduto) => {
 
     return item
 }
+
+console.log(itenscarrinho.findIndex(elem => elem.idProduto == 1))
+
 //FUNÇÃO PARA ADICIONAR ITEM
 const addItem = (objItem) => {
-    itenscarrinho.push(objItem)
 
-    sessionStorage.setItem("carrinhoSessao", JSON.stringify(itenscarrinho))
-    //const itensCarrinho02 = JSON.parse(localStorage.get("carrinhoSessao")) || []
+    const indice = itenscarrinho.findIndex(
+        elem => elem.idProduto == objItem.idProduto
+    );
+
+    if (indice != -1) {
+        // Produto já existe
+        itenscarrinho[indice].quantidade++;
+    } else {
+        // Produto não existe
+        itenscarrinho.push({
+            ...objItem,
+            quantidade: 1
+        });
+    }
+
+    sessionStorage.setItem(
+        "carrinhoSessao",
+        JSON.stringify(itenscarrinho)
+    );
 }
 
 //FUNÇÂO PARA LISTAR OS ITENS DO CARRINHO
