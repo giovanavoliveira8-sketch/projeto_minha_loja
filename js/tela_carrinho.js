@@ -42,7 +42,7 @@ const montaTelaCarrinho = () => {
         divQuant.appendChild(inputQuantidade)
 
         const pCalc = document.createElement('p')
-        pCalc.innerHTML = `R$ ${elem.valorUnitario * 1}`
+        pCalc.innerHTML = `R$ ${(elem.valorUnitario * elem.quantidade).toFixed(2)}`
 
         const imgRemover = document.createElement('img')
         imgRemover.setAttribute('src', '../imagens/icones/remover.png')
