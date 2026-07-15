@@ -1,5 +1,6 @@
 //IMPORTANDO OS PRODUTOS DO ARQUIVO lista_produtos.js
 
+import { produtos } from './lista_produtos.js'
 import { addItem } from './carrinho.js'
 
 //CARREGANDO PRODUTOS
@@ -142,6 +143,9 @@ const montaCards = (objProdutos) => {
 
         btnCard.addEventListener('click', ()=> {
             addItem(elem)
+
+            console.log(sessionStorage.getItem('carrinhoSessao'));
+            
             window.location.href = 'paginas/carrinho.html'
         })
 
