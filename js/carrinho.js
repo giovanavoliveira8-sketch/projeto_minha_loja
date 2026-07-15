@@ -11,7 +11,7 @@ const item = (objProduto) => {
         valorUnitario: objProduto.valorUnitario,
         unidade: objProduto.unidade,
         caminhoImagem: objProduto.caminhoImagem,
-        quantidade: 1
+        quantidade: 1,
     }
 
     return item
