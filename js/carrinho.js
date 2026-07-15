@@ -18,6 +18,16 @@ const listItens = () => {
 
 }
 
+//FUNÇÂO PARA REMOVER OS ITENS DO CARRINHO
+const removeItem = (indice) => {
+    itenscarrinho.splice(indice, 1);
+
+    sessionStorage.setItem(
+        "carrinhoSessao",
+        JSON.stringify(itenscarrinho)
+    );
+}
 
 //EXPORTAÇÃO
-export {addItem, listItens}
+export { addItem, listItens, removeItem }
+
