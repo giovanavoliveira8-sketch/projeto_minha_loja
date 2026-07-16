@@ -17,8 +17,6 @@ const item = (objProduto) => {
     return item
 }
 
-console.log(itenscarrinho.findIndex(elem => elem.idProduto == 1))
-
 //FUNÇÃO PARA ADICIONAR ITEM
 const addItem = (objItem) => {
 
@@ -29,6 +27,8 @@ const addItem = (objItem) => {
     if (indice != -1) {
         // Produto já existe
         itenscarrinho[indice].quantidade++;
+
+
     } else {
         // Produto não existe
         itenscarrinho.push({
@@ -62,6 +62,14 @@ const removeItem = (indice) => {
     );
 }
 
-//EXPORTAÇÃO
-export { addItem, listItens, removeItem }
+//FUNÇÃO PARA ADICIONAR OS ITENS ATRAVÉS DO BOTÃO INPUT
+const atualizarQuantidade = (indice, quantidade) => {
+    itenscarrinho[indice].quantidade = Number(quantidade);
 
+    sessionStorage.setItem(
+        "carrinhoSessao",
+        JSON.stringify(itenscarrinho)
+    );
+}
+
+export { addItem, listItens, removeItem, atualizarQuantidade }
