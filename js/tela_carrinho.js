@@ -1,4 +1,4 @@
-import { listItens, removeItem } from './carrinho.js'
+import { listItens, removeItem, atualizarQuantidade } from './carrinho.js'
 
 const montaTelaCarrinho = () => {
     const divProdutos = document.querySelector('#produtos')
@@ -38,8 +38,24 @@ const montaTelaCarrinho = () => {
         inputQuantidade.setAttribute('id', `quant${i}`)
         inputQuantidade.setAttribute('class', 'input-item')
         inputQuantidade.setAttribute('value', elem.quantidade)
+        inputQuantidade.setAttribute('min', '1')
+        inputQuantidade.setAttribute('step', '1')
 
         divQuant.appendChild(inputQuantidade)
+
+        inputQuantidade.addEventListener('change', () => {
+
+            const quantidade = Number(inputQuantidade.value);
+        
+            if (!Number.isInteger(quantidade) || quantidade < 1) {
+                alert("Não é possível essa quantidade.");
+                inputQuantidade.value = elem.quantidade;
+                return;
+            }
+        
+            atualizarQuantidade(i, quantidade);
+            montaTelaCarrinho();
+        });
 
         const pCalc = document.createElement('p')
         pCalc.innerHTML = `R$ ${(elem.valorUnitario * elem.quantidade).toFixed(2)}`
@@ -68,6 +84,29 @@ const montaTelaCarrinho = () => {
         divProdutos.appendChild(sectionItem)
 
     })
+
+    calculaTotal();
+
+}
+
+const calculaTotal = () => {
+        
+    let total = 0;
+
+    listItens ().forEach((elem) => {
+        total += elem.valorUnitario * elem.quantidade;
+    });
+
+    const frete = 10;
+
+    document.querySelector("#valorTotal").innerHTML =
+        `R$ ${total.toFixed(2).replace('.', ',')}`;
+
+    document.querySelector("#valorFrete").innerHTML =
+        `R$ ${frete.toFixed(2).replace('.', ',')}`;
+
+    document.querySelector("#valorPagar").innerHTML =
+        `R$ ${(total + frete).toFixed(2).replace('.', ',')}`;
 }
 
 montaTelaCarrinho()
